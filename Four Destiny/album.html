@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOUR DESTINY</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      main {
+        margin-top: 5rem;
+      }
+      .navbar-container .navbar-nav ul {
+        list-style-type: none;
+      }
+      .album-container h1 {
+        font-size: 3.5rem;
+        text-align: center;
+      }
+      .album-2023 .album-tittle {
+        padding: 5rem 0 0;
+        background-color: var(--bg2);
+      }
+      .album-2023 h2 {
+        text-align: center;
+        padding: 1.5rem 0;
+        background-color: var(--primary);
+      }
+      .album-2023 p {
+        padding: 6rem 10% 1.4rem;
+        margin: 20rem 0;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar-container">
+      <a href="index.html" class="navbar-logo">FOUR<span>DESTINY</span></a>
+
+      <div class="navbar-nav">
+        <ul>
+          <li>
+            <button>
+              <span>2023</span>
+              
+            </button>
+            <ul>
+              <li><a href="#January23">January</a></li>
+              <li><a href="#Februari23">Februari</a></li>
+              <li><a href="#Maret23">Maret</a></li>
+              <li><a href="#April23">April</a></li>
+              <li><a href="#Mei23">Mei</a></li>
+              <li><a href="#Juni23">Juni</a></li>
+              <li><a href="#Juli23">Juli</a></li>
+              <li><a href="#Agustus23">Agustus</a></li>
+              <li><a href="#September23">September</a></li>
+              <li><a href="#Oktober23">Oktober</a></li>
+              <li><a href="#November23">November</a></li>
+              <li><a href="#Desember23">Desember</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-extra">
+        <a id="search"><i data-feather="search"></i></a>
+        <a id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navigation end -->
+
+    <!-- main -->
+    <main>
+      <section class="album-container" id="album-container">
+        <h1>ALBUM</h1>
+        <!-- 2023 -->
+        <div class="album-2023" id="2023">
+          <div class="album-tittle">
+            <h2>2023</h2>
+          </div>
+          <div class="month" id="month">
+            <p id="January23">January</p>
+            <p id="Februari23">Februari</p>
+            <p id="Maret23">Maret</p>
+            <p id="April23">April</p>
+            <p id="Mei23">Mei</p>
+            <p id="Juni23">Juni</p>
+            <p id="Juli23">Juli</p>
+            <p id="Agustus23">Agustus</p>
+            <p id="September23">September</p>
+            <p id="Oktober23">Oktober</p>
+            <p id="November23">November</p>
+            <p id="Desember23">Desember</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer>
+      <div class="credit">
+        <p>Created by <a href="">HwaidCode</a> | &copy; 2025.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>

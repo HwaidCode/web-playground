@@ -1,0 +1,310 @@
+:root{
+  --wrm1: rgb(237, 188, 96);
+  --wrm2: rgb(189, 142, 56);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+  height: 100%
+}
+body {
+  /* background-color: rgb(5, 5, 54); */
+  height: 100%;
+  color: white;
+  background-color: rgb(237, 188, 96);
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: rgba(189, 142, 56, 0.849);
+  padding: 0.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid rgb(113, 85, 34);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+header h1,
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+main {
+  margin: 6rem 0 4.3rem;
+  flex: 1;
+}
+.up {
+  background-color: white;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 100;
+  border-radius: 0.5rem;
+  color: rgb(189, 143, 56);
+  text-decoration: none;
+  display: none;
+  transition: .4s;
+}
+.up:hover{
+  background-color: rgb(189, 143, 56);
+  color: white;
+}
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 14.1%;
+  margin: 0 0 1rem;
+  /* background-color: black; */
+}
+.title h2 {
+  /* padding: 0 10%; */
+  /* margin: 0 10.5%; */
+  border-radius: 0.5rem;
+  background-color: rgb(189, 143, 56);
+}
+
+.menu-container {
+  /* background-color: rgb(255, 255, 255); */
+  /* padding: 6% 0%; */
+  display: flex;
+  gap: 2rem;
+  /* border: 2px solid black; */
+  flex-wrap: wrap;
+  /* height: 600px; */
+  margin: 0 10%;
+  justify-content: center;
+}
+.menu {
+  background-color: rgb(189, 143, 56);
+  height: 17rem;
+  /* width: 12rem; */
+  /* padding: 1rem; */
+  text-align: center;
+  border-radius: 0.5rem;
+  /* flex-grow: 1; */
+  flex: 0 0 230px;
+  transition: 0.3s;
+  /* margin: 2rem; */
+  border: 2px solid rgb(189, 143, 56);
+  box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, 0.443);
+}
+.menu:hover {
+  transform: translateY(-0.7rem);
+  cursor: pointer;
+  /* background-color: rgb(154, 115, 44); */
+  border: 2px solid rgb(113, 85, 34);
+  box-shadow: 0.4rem 0.6rem 0.5rem rgba(0, 0, 0, 0.443);
+}
+.menu .menu-title {
+  margin-top: 13rem;
+  /* background-color: rgb(113, 85, 34); */
+  background-color: rgb(189, 142, 56);
+  padding: 0 0 0.5rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+.menu h3 {
+  font-size: 1.4rem;
+}
+.menu p {
+  font-size: 1.2rem;
+  font-weight: 550;
+  line-height: 1.4rem;
+}
+#menu1 {
+  background-image: url(img/menu-1.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 135%;
+}
+#menu2 {
+  background-image: url(img/menu-2.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 124%;
+}
+#menu3 {
+  background-image: url(img/menu-3.jpg);
+  background-position: 44% -5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 144%;
+}
+#menu4 {
+  background-image: url(img/menu-4.jpeg);
+  background-position: 54% -30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 174%;
+}
+#menu5 {
+  background-image: url(img/menu-5.jpg);
+  background-position: center -140%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 174%;
+}
+#menu6 {
+  background-image: url(img/menu-6.jpg);
+  background-position: 20% top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 145%;
+}
+#menu7 {
+  background-image: url(img/menu-7.jpg);
+  background-position: center -20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 145%;
+}
+#menu8 {
+  background-image: url(img/menu-8.jpeg);
+  background-position: 56% -180%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 165%;
+}
+#menu9 {
+  background-image: url(img/menu-9.jpg);
+  background-position: 50% -80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 165%;
+}
+#menu10 {
+  background-image: url(img/menu-10.jpg);
+  background-position: 56% top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 135%;
+}
+footer {
+  background-color: rgb(189, 143, 56);
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 600;
+}
+footer p{
+  padding-top: 1rem;
+}
+footer p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+footer p a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+.footer{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(237, 188, 96);
+}
+#nav-footer{
+  color: white;
+  text-decoration: none;
+}
+/* #menu1:hover{
+  background-size: 135%;
+  background-position: center top;
+} */
+@media (max-width: 1621px) {
+  .up{
+    display:flex
+  }
+}
+@media (max-width: 624px) {
+  main {
+    margin: 4.5rem 0 2rem;
+  }
+  .menu-container {
+    margin: 0 10%;
+  }
+  .menu {
+    /* padding: 0 6rem; */
+    flex: 0 0 354px;
+  }
+  .title {
+    padding: 2rem 10.5%;
+  }
+  .menu .menu-title {
+    padding: 0 4rem 0.5rem;
+    /* border: 2px solid black; */
+  }
+  #menu1 {
+    background-position: center 70%;
+    background-size: 125%;
+  }
+  #menu2 {
+    background-position: center 180%;
+    background-size: 114%;
+  }
+  #menu3 {
+    background-position: 45% 90%;
+    background-size: 134%;
+  }
+  #menu4 {
+    background-position: 55% 160%;
+    background-size: 144%;
+  }
+  #menu5 {
+    background-position: 47% 140%;
+    background-size: 144%;
+  }
+  #menu6 {
+    background-position: 10% -10%;
+    background-size: 124%;
+  }
+  #menu7 {
+    background-position: center 90%;
+    background-size: 124%;
+  }
+  #menu8 {
+    background-position: 60% 70%;
+    background-size: 144%;
+  }
+  #menu9 {
+    background-position: 60% 90%;
+    background-size: 124%;
+  }
+  #menu10 {
+    background-position: 100% 0%;
+    background-size: 104%;
+  }
+}
+
+
+/* CREDIT HTML */
+.menu-container .menu a{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 2px .5rem;
+  background-color: var(--wrm1);
+  border-radius: 0.2rem;
+}
+.menu-container .menu a:hover{
+  background-color: white;
+  color: var(--wrm1);
+}
