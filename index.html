@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Playground</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Web style -->
+    <style>
+      :root {
+        --indexbg1: rgb(0, 0, 33);
+        --indexco1: rgb(0, 0, 87);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--indexbg1);
+        color: white;
+      }
+      header {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 2rem;
+        background-color: var(--indexco1);
+      }
+      main {
+        flex: 1;
+      }
+      .container {
+        /* border: 2px solid white; */
+        margin: 3rem 6%;
+        gap: 1.5rem;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+      .container .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 250px;
+        background-color: var(--indexco1);
+        border-radius: 1rem;
+        padding: 0 1.5rem 1.5rem;
+        line-height: 2rem;
+        transition: 0.3s;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.43);
+      }
+      @media (hover: hover) and (pointer: fine) {
+        .container .card:hover {
+          box-shadow: 0 0 10px 7px var(--indexco1);
+          background-color: white;
+          color: var(--indexco1);
+        }
+        .container .card:hover a {
+          background-color: var(--indexco1);
+          color: white;
+        }
+      }
+      .container .card .card-text {
+        font-size: 1.5rem;
+        text-align: justify;
+        padding: 1.5rem 0 2rem;
+      }
+      .container .card .card-text span {
+        font-size: 3.5rem;
+      }
+      .container .card h3 {
+        padding-bottom: 0.7rem;
+      }
+      .container .card p {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      .container .card a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: var(--indexco1);
+        padding: 0.5rem 2rem;
+        background-color: white;
+        border-radius: 0.7rem;
+        transition: 0.3s;
+      }
+      .container .card a:hover {
+        background-color: var(--indexbg1);
+        box-shadow: 0 0 10px 3px rgba(0, 0, 87, 0.661);
+      }
+      footer {
+        text-align: center;
+        background-color: var(--indexco1);
+        padding: 1rem;
+      }
+      footer p a {
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+      }
+      footer p a:hover {
+        text-decoration: underline;
+        color: var(--indexbg1);
+      }
+      @media (max-width: 592px) {
+        .container .card {
+          padding: 0 1.5rem 2rem;
+          flex: 0 0 400px;
+        }
+        .container .card .card-text {
+          padding-bottom: 6rem;
+        }
+        header {
+          font-size: 0.8rem;
+          padding: 1.5rem 0.3rem;
+        }
+        .container .card:hover:active {
+          box-shadow: 0 0 10px 7px var(--indexco1);
+          background-color: white;
+          color: var(--indexco1);
+        }
+        .container .card:hover:active a {
+          background-color: var(--indexco1);
+          color: white;
+        }
+      }
+      @media (max-width: 466px) {
+        .container .card {
+          padding: 0 1.5rem 2rem;
+          flex: 0 0 300px;
+        }
+        header {
+          font-size: 0.65rem;
+          padding: 1.5rem 0.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>This are all my website creations</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="card-text">
+            <h3><span>1</span>st</h3>
+            <p>
+              Four Destiny - this is my first website that i make for my friends
+            </p>
+          </div>
+          <a href="./Four Destiny/" target="_blank">Go</a>
+        </div>
+        <div class="card">
+          <div class="card-text">
+            <h3><span>2</span>nd</h3>
+            <p>Warung e Mak - this menu website just for exercises</p>
+          </div>
+          <a href="./Warung E Mak/" target="_blank">Go</a>
+        </div>
+        <!-- add website under this section -->
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 | Created by
+        <a href="https://github.com/HwaidCode">HwaidCode</a>
+      </p>
+    </footer>
+  </body>
+</html>
