@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Forms | HwaidCode</title>
+    <meta name="author" content="HwaidCode" />
+    <meta
+      name="description"
+      content="This is my first forms website to login or sign in"
+    />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- web style -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div></div>
+    </header>
+    <main>
+      <section class="login">
+        <form action="">
+          <h2>Sign in</h2>
+
+          <div class="input-box">
+            <label for="name">Username/email :</label>
+            <input
+              type="text"
+              placeholder="Username/Email"
+              id="name"
+              name="name"
+              required
+            />
+            <i class="bx bxs-user"></i>
+          </div>
+
+          <div class="input-box">
+            <label for="pass">Password :</label>
+            <input
+              type="password"
+              placeholder="Password"
+              id="pass"
+              name="pass"
+              required
+            />
+            <i class="bx bxs-lock"></i>
+          </div>
+
+          <div class="remember-forget">
+            <label for="check"
+              ><input type="checkbox" id="check" /> Remember me</label
+            >
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn">Sign in</button>
+
+          <div class="sign-up">
+            <p>Don't have an account? <a href="#">sign up</a></p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 | Created by
+        <a href="https://github.com/HwaidCode">HwaidCode</a>
+      </p>
+    </footer>
+  </body>
+</html>
