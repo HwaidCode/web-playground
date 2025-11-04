@@ -1,0 +1,394 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./pedro-lastra-Nyvq2juw4_o-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(0.3rem);
+  /* color: white; */
+}
+.container {
+  position: relative;
+  background-color: transparent;
+  width: 65rem;
+  height: 40rem;
+  border-radius: 2rem;
+  /* border: 3px solid white; */
+  box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.435);
+  overflow: hidden;
+  /* margin: 0 3%; */
+  transition: 0.3s;
+}
+.form-box {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 1;
+  transition: 0.6s ease-in-out;
+}
+.form-box span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+/* .form-box.signIn,
+.form-box.form-box.signUp,
+.form-box input,
+.form-box .input-box,
+.form-box .input-box input,
+.form-box .input-box i,
+.form-box .btn {
+  visibility: hidden;
+  color: transparent;
+} */
+.form-box.signIn {
+  left: -50%;
+  transition-delay: 0.6s;
+}
+.container.active .form-box.signIn {
+  left: 0;
+  transition-delay: 0.9s;
+}
+.form-box.signUp {
+  right: 0;
+  transition-delay: 0.9s;
+}
+.container.active .form-box.signUp {
+  right: -50%;
+  transition-delay: 0.6s;
+}
+.form-box.signIn,
+.form-box.signUp {
+  /* visibility: hidden; */
+}
+
+form {
+  width: 100%;
+  padding: 2rem;
+}
+.container h1 {
+  font-size: 4rem;
+  margin: 0 0 1rem;
+}
+.input-box {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 3rem;
+  padding: 0 3rem 0 1rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  background-color: rgb(230, 230, 230);
+  outline: none;
+  box-shadow: none;
+  transition: 0.2s ease;
+}
+input:focus,
+input:valid {
+  border: 1px solid black;
+}
+
+/* this is just an example */
+
+/* .input-box .label {
+  position: absolute;
+  color: black;
+  background-color: white;
+  padding: 0 3px;
+  left: 1rem;
+  transform: translateX(3rem);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  transition: .2s ease;
+} */
+/* input:focus,
+input:valid{
+    color: black;
+}
+input:focus + .label,
+input:valid + .label{
+    color: black;
+    line-height: 5rem;
+    padding: 0 5px;
+    height: 30px;
+    transform: translateY(-38px);
+} */
+
+/* this is just an example end */
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+form .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: -0.5rem 0 0;
+}
+form .remember-forgot input {
+  accent-color: black;
+}
+form .remember-forgot a {
+  color: black;
+  text-decoration: none;
+}
+
+form .btn {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: none;
+  margin: 0.5rem 0 2rem;
+  color: white;
+  background-color: black;
+  transition: 0.1s ease;
+  border: 2px solid black;
+}
+
+.social-icons a {
+  color: white;
+  transition: 0.1s ease;
+  border: 2px solid black;
+}
+
+form .social-icons a {
+  font-size: 2rem;
+  /* color: white; */
+  padding: 0.5rem;
+  display: inline-flex;
+  /* border: 2px solid black; */
+  border-radius: 0.8rem;
+  text-decoration: none;
+  margin: 0.5rem 0 0;
+  background-color: black;
+}
+
+.toggle-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.toggle-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  transition: 0.6s ease-in-out;
+  /* z-index: 10; */
+}
+.toggle-box p,
+.toggle-box h2 {
+  filter: drop-shadow(0 0 3px black);
+}
+
+.toggle-panel.toggle-left {
+  left: 0;
+  transition-delay: 0.9s;
+}
+.container.active .toggle-panel.toggle-left {
+  left: -50%;
+  transition-delay: 0.6s;
+}
+.toggle-panel.toggle-right {
+  right: -50%;
+  transition-delay: 0.6s;
+}
+.container.active .toggle-panel.toggle-right {
+  right: 0;
+  transition-delay: 0.9s;
+}
+
+.toggle-box .btn {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  border: 2px solid white;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0.5rem 0 2rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.1s ease;
+}
+/* content hover */
+form .remember-forgot a:hover:active {
+  font-weight: 500;
+  text-decoration: underline;
+}
+form .btn:hover:active {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.social-icons a:hover:active {
+  border: 2px solid black;
+  color: black;
+}
+form .social-icons a:hover:active {
+  background-color: white;
+}
+.toggle-box .btn:hover:active {
+  background-color: white;
+  color: black;
+}
+
+/* tap hover for android */
+@media (hover: hover) and (pointer: fine) {
+  form .remember-forgot a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  form .btn:hover {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .social-icons a:hover {
+    color: black;
+    border: 2px solid black;
+  }
+  form .social-icons a:hover {
+    /* box-shadow: 0 0 5px 2px black inset; */
+    background-color: white;
+  }
+  .toggle-box .btn:hover {
+    background-color: white;
+    /* color: transparent; */
+    color: black;
+  }
+  .input-box input:hover {
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-width: 1134px) {
+  .container {
+    transform: scale(0.95);
+  }
+}
+@media screen and (max-width: 814px) {
+  .container {
+    /* margin: 0 1%; */
+    height: 53rem;
+  }
+  .container .remember-forgot {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .toggle-panel.toggle-right {
+    width: 100%;
+    height: 30%;
+    bottom: -50%;
+    right: 0;
+    transform: scale(0.9);
+  }
+  .container.active .toggle-panel.toggle-right {
+    bottom: 0;
+  }
+  .toggle-panel.toggle-left {
+    width: 100%;
+    height: 30%;
+    top: 1rem;
+    transform: scale(0.9);
+  }
+  .container.active .toggle-panel.toggle-left {
+    top: -50%;
+    left: 0;
+  }
+  .toggle-panel.toggle-right p,
+  .toggle-panel.toggle-left p {
+    font-size: 1.5rem;
+    margin-bottom: .6rem;
+    font-weight: 500;
+  }
+   .toggle-panel h1{
+    font-size: 1.5rem;
+   }
+  .toggle-box .btn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    transform: scale(1.2)
+  }
+  .form-box {
+    padding: 0 20%;
+  }
+  .form-box.signIn {
+    width: 100%;
+    top: -100%;
+    height: 70%;
+    left: 0;
+    border-radius: 0 0 5rem 5rem;
+  }
+  .container.active .form-box.signIn {
+    top: 0;
+  }
+  .form-box.signUp {
+    width: 100%;
+    bottom: 0;
+    height: 70%;
+    border-radius: 5rem 5rem 0 0;
+  }
+  .container.active .form-box.signUp {
+    bottom: -100%;
+    right: 0;
+  }
+  .form-box.signUp h1{
+    margin-top: -1.5rem;
+  }
+  .form-box.signIn h1{
+    margin-top: -2.5rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .form-box {
+    padding: 0 0;
+  }
+}
+@media screen and (max-width: 464px) {
+  .toggle-panel.toggle-right h2{
+    font-size: 2rem;
+    margin-bottom: 1rem
+   }
+}
